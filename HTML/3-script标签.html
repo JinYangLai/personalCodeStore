@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>script标签</title>
+</head>
+<body>
+    <!-- type 和 language 属性都可用来指定 <script> 标签中的脚本的类型 -->
+        language = "JavaScript"
+        type = "text/javascript"
+        
+        async
+        是html5新加的一个属性，官方一点说,表示应该立即下载脚本，
+        但是不妨碍页面其他操作，通俗一点就是异步加载js并执行，
+        它和dom的渲染是异步，async只对外部脚本文件有效。
+
+        defer
+        表示脚本可以延迟到文档完全被解析和显示之后再执行，只对外部文件有效，
+        通俗的说就是js文件与dom结构一起加载，但是js文件会等html渲染完之后再执行。
+
+        type = “Module”时，执行顺序同defer，会当作模块进行解析。
+        
+        ---- 加载  ++++++ 执行 ==== 等待
+        async JS加载完后立即执行
+        JS               -------++++++++
+        HTML--------------------========-----------
+
+        defer JS会等html渲染完之后再执行
+        JS               -------===========++++++++
+        HTML-------------------------------
+</body>
+</html>

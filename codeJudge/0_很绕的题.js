@@ -9,7 +9,7 @@ var fun = function () {
   }
 }
 var p = new fun()
-console.log(p.name); 
+console.log(1,p.name); 
 
 //第二题
 var fun2 = function () {
@@ -17,7 +17,7 @@ var fun2 = function () {
   return 'jack'
 }
 var p2 = new fun2();
-console.log(p2.name);
+console.log(2,p2.name);
 
 //第三题
 var fun3 = function () { };

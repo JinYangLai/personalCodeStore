@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta http-equiv="refresh" content="2;URL=http://www.baidu.com">//2秒后在当前页跳转到百度 -->
+  <title>Meta标签的作用</title>
+</head>
+<body>
+    
+  charset:
+        声明字符编码方式
+  name:  
+        viewport 设置屏幕宽高，
+        一般都是采用默认设置，来实现视口宽等于设备宽，布局完成后屏幕显示也不进行缩放
+        <!-- <meta name="viewport" content="width　=device-width, initial-scale=1.0"> -->
+        render 设置兼容模式
+        <!-- <meta name="renderer" content="webkit"> //默认webkit内核 
+        <meta name="renderer" content="ie-comp"> //默认IE兼容模式 
+        <meta name="renderer" content="ie-stand"> //默认IE标准模式   
+        <meta name="renderer" content="webkit|ie-comp|ie-stand"> -->
+        Keyword 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
+        <!-- <meta name="keywords" content="HTML,ASP,PHP,SQL"> -->
+  http-equiv:
+        http-equiv属性与content属性结合使用, 
+        http-equiv属性为指定所要模拟的标头字段的名称，content属性用来提供值。
+
+        content-Type 声明网页字符编码:
+        <!-- <meta http-equiv="content-Type" content="text/html charset=UTF-8"> -->
+
+        refresh 指定一个时间间隔(以秒为单位),在此时间过去之后从服务器重新载入当前页面,也可以另外指定一个页面.
+        <!-- <meta http-equiv="refresh" content="2;URL=http://www.baidu.com">//2秒后在当前页跳转到百度 -->
+
+        X-UA-Compatible 浏览器采取何种版本渲染当前页面
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> //指定IE和Chrome使用最新版本渲染当前页面 -->
+
+        expires 用于设定网页的到期时间，过期后网页必须到服务器上重新传输
+        <!-- <meta http-equiv="expires" content="Sunday 22 July 2016 16:30 GMT"> -->
+
+        catch-control 用于指定所有缓存机制在整个请求/响应链中必须服从的指令
+        <!-- <meta http-equiv="cache-control" content="no-cache"> -->
+        public 	所有内容都将被缓存(客户端和代理服务器都可缓存)
+        private 	内容只缓存到私有缓存中(仅客户端可以缓存，代理服务器不可缓存)
+        no-cache 	必须先与服务器确认返回的响应是否被更改，然后才能使用该响应来满足后续对同一个网址的请求。因此，如果存在合适的验证令牌 (ETag)，no-cache 会发起往返通信来验证缓存的响应，如果资源未被更改，可以避免下载。
+        no-store 	所有内容都不会被缓存到缓存或 Internet 临时文件中
+        must-revalidation/proxy-revalidation 	如果缓存的内容失效，请求必须发送到服务器/代理以进行重新验证
+        max-age=xxx (xxx is numeric) 	缓存的内容将在 xxx 秒后失效, 这个选项只在HTTP 1.1可用, 并如果和Last-Modified一起使用时, 优先级较高
+</body>
+</html>

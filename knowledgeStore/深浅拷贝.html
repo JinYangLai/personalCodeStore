@@ -83,9 +83,9 @@
     let createCloneObj = Object.create(person)
 
     // 第三种方法
-    // let jsonCloneObj = JSON.parse(JSON.stringify(person))
+    let jsonCloneObj = JSON.parse(JSON.stringify(person))
 
-    let jsonCloneObj = deepClone(person)
+    //let jsonCloneObj = deepClone(person)
     jsonCloneObj.name = 'young'
     jsonCloneObj.food.fruit = 'pear'
     jsonCloneObj.food.meat.red = 'fish';

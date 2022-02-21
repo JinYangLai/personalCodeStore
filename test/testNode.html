@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Document</title>
+  <script src="../lib/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+  <div class="node">11231</div>
+  <div class="node">11231</div>
+  <div class="node">11231</div>
+  <div class="node">11231</div>
+  <div class="node">11231</div>
+  <div class="node" id="jj">11231</div>
+</body>
+<script>
+  var data = 'ddaye'
+  window.onload = function () {
+    
+    var nodelist = document.querySelectorAll('.node')
+    console.log(nodelist)
+    for (let i = 0; i < nodelist.length; i++) {
+      var element = nodelist[i];
+      console.log(element)
+      element[i].after('<span class="scax">' + data + '</span>')
+    }
+  }
+  $('#jj').after('<span class="scax">' + data + '</span>')
+
+</script>
+
+</html>

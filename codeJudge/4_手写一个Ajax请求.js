@@ -15,3 +15,7 @@ function ajax(type, url) {
   })
   return res
 }
+// 1、定义一个Promise函数
+// 2、定义XMLHttpRequest
+// 3、使用xhl方法 open()设置请求方式、url，send()方法发送。
+// 4、在onreadystatechange方法里判断 readyState是否=4，判断status是否为200，200 resove返回数据，404 reject抛出异常。 

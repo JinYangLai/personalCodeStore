@@ -53,3 +53,7 @@ const throttle = (func, wait = 0, execFirstCall) => {
   throttle.flush = flush
   return throttle
 }
+// 1、获取当前时间
+// 2、定义延时时间
+// 3、声明一个timeout变量，判断timeout是否存在，存在就clearTimeout，不存在就设置为null。
+// 4、定义一个promise，判断延时是否超过了定义的延迟时间，true执行函数，false就继续执行setTimeout函数。

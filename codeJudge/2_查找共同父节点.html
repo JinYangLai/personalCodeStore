@@ -15,9 +15,9 @@
         }
         function commomParent(oNode1, oNode2) {
             for(;oNode1;oNode1 = oNode1.parentNode){
-                //console.log(oNode1)
-                if(oNode1.contains(oNode2)){
-                    console.log(oNode1)
+                console.log(oNode1.parentNode)
+                if(oNode1.contains(oNode2)){ // contains() A是否包含B
+                    // console.log(oNode1)
                     return oNode1;
                 }
             }

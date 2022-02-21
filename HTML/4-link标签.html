@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tag link</title>
+</head>
+<body>
+    link除了引入css外，rel属性值为icon时可以引入外部图标。
+    - link标签：通过预处理提升渲染速度
+    + dns-prefetch。当 link 标签的 rel 属性值为“dns-prefetch”时，
+      浏览器会对某个域名预先进行 DNS 解析并缓存。这样，当浏览器在请求同域名资源的时候，
+      能省去从域名查询 IP 的过程，从而减少时间损耗。
+    + preconnect。让浏览器在一个 HTTP 请求正式发给服务器前预先执行一些操作，
+      这包括 DNS 解析、TLS 协商、TCP 握手，通过消除往返延迟来为用户节省时间。
+    + prefetch/preload。两个值都是让浏览器预先下载并缓存某个资源，
+      但不同的是，prefetch 可能会在浏览器忙时被忽略，而 preload 则是一定会被预先下载。
+    + prerender。浏览器不仅会加载资源，还会解析执行页面，进行预渲染。
+    + link请求资源流程图!
+</body>
+</html>

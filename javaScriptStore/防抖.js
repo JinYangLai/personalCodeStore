@@ -34,3 +34,8 @@ const debounce = (func, wait = 0) => {
   debounced.flush = flush;
   return debounced
 }
+// 1、定义防抖的函数接受两个参数，一个为func，一个为延时
+// 2、定义一个timeout变量
+// 3、判断timeout变量是否存在
+// 4、定一个promise，定义setTimeout函数
+// 5、异步获取func结果，有结果promise状态设为resove，没有结果设置为rejected
