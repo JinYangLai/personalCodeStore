@@ -19,6 +19,7 @@
       let flag = true;
       for (let i = 0; i < arr.length; i++) {
         if (newArr.indexOf(arr[i]) == -1) {
+          // NaN != NaN true
           if (arr[i] != arr[i]) {
             if (flag) {
               newArr.push(arr[i]);
